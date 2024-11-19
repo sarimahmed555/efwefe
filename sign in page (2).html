@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/c32adfdcda.js" crossorigin="anonymous"></script>
+    <title>Gracious Garmnets</title>
+</head>
+<style>
+body{
+      
+        background: #3876BF;
+}
+
+.main-container{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'jost',sans-serif;
+}
+
+.main-signin{
+    justify-content: center;
+    text-align: center;
+    width: 350px;
+    height: 500px;
+    overflow: hidden;
+background-color: #192655;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px #000;
+}
+
+#chk{
+    display: none;
+}
+
+.signup{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+label{
+    color: #fff;
+    font-size: 2.3em;
+    justify-content: center;
+    display: flex;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+input{
+    width: 60%;
+    height: 20px;
+    background: #e0dede;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+button{
+    width: 120px;
+    height: 40px;
+    margin: 10px auto;
+    justify-content: center;
+    display: block;
+    color: #fff;
+    background: #0174BE;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: .2s ease-in;
+    cursor: pointer;
+   }
+
+
+
+.login{
+    height: 460px;
+    background: #EEE;
+    border-radius: 60% / 10%;
+    transform: translateY(-180px);
+    transition: .8s ease-in-out;
+}
+
+.login label{
+    color: #0C356A;
+    transform: scale(.6);
+}
+
+#chk:checked ~ .login{
+    transform: translateY(-500px);
+}
+
+#chk:checked ~ .login label{
+    transform: scale(1);
+}
+
+#chk:checked ~ .signup label{
+    transform: scale(.6);
+}
+.top marquee{
+	font-size: 20px;
+	margin-bottom: -25px;
+margin-right: 355px;
+color: aliceblue;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.top{
+	margin-bottom: -27px;
+	padding: 15px;
+background-color: #0087ca;
+text-align: right;
+justify-content: space-between;
+word-spacing: 1em;
+
+}
+.top a{
+	
+	color: aliceblue;
+}
+
+.top a:hover{
+	color: #000000;
+}
+ 
+.navbar a:hover{
+	color: #004774;
+   }
+.navbar{
+    margin-top: 30px;
+    padding-top: 15px;
+    background-color: #000000;
+    
+   }
+   .navbar a{
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'Young Serif', serif;
+   
+   }
+   .navbar img{
+       margin-top: -95px;
+       margin-bottom: -85px;
+       width: 250px;
+       height: 250px;
+   }
+  </style>
+</head>
+<body>
+  
+  <div class="top"> 
+    <marquee  direction="left">Wellcome to Gracious Garmnets Pakistan Top Selling Brand. Standard Shipping Rate Rs300 All Over Pakistan.</marquee>
+    
+    
+    <a href="">021-223-234-267</a>
+    <a href=""> CustomerCare</a>
+    <a href="">24/7</a>
+    
+    
+    </div>
+    
+      <div class="navbar ">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+    
+                    <div class="navbar-header">
+                        <button id="Toggle" class="navbar-toggle" data-target="#mobile_menu" data-toggle="collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                       <img src="logo2.png" alt="">
+                    </div>
+    
+                    <div class="navbar-collapse collapse" id="mobile_menu">
+                        <ul class="nav navbar-nav">
+                            <li ><a href="index.html">Home</a></li>
+                            <li><a href="#">Brands</a></li>
+                            <li><a href="About Us.html">About Us</a></li>
+                            <li><a href="contact us.html">Contact Us</a></li>
+                        </ul>
+                     
+    
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-log-in"></span> Login / Sign Up <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="sign in page (2).html">Login</a></li>
+                                    <li><a href="sign in page (2).html">Sign Up</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<div class="main-container">
+    <div class="main main-signin">
+        <input type="checkbox" id="chk" aria-hidden="true">
+
+        <div class="signup">
+            <form>
+                <label from="chk" aria-hidden="true">Sign up</label>
+                <input type="text" name="txt" placeholder="User name" required="">
+                <input type="email" name="txt" placeholder="email" required="">
+                <input type="password" name="txt" placeholder="password" required="">
+                <button>Sign up</button>
+            </form>
+
+        </div>
+        
+        <div class="login">
+            <form>
+                <label for="chk" aria-hidden="true">Login</label>
+                <input type="text" name="username" placeholder="username" required="">
+                <input type="password" name="pswd" placeholder="password" required="">
+                <button>Login</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
